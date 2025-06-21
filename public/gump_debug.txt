@@ -1,0 +1,44 @@
+GUMP Object
+(
+    [lang:protected] => en
+    [fields_error_messages:protected] => Array
+        (
+            [password.regex] => A senha deve conter: 1 maiúscula, 1 minúscula, 1 número e 1 caractere especial.
+            [confirm_password.equalsfield] => As senhas devem ser iguais.
+        )
+
+    [validation_rules:protected] => Array
+        (
+            [current_password] => Array
+                (
+                    [0] => required
+                )
+
+            [password] => Array
+                (
+                    [0] => required
+                    [min_len] => 8
+                    [regex] => Array
+                        (
+                            [0] => /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&.]).{8,}/
+                        )
+
+                )
+
+            [confirm_password] => Array
+                (
+                    [0] => required
+                    [equalsfield] => password
+                )
+
+        )
+
+    [filter_rules:protected] => Array
+        (
+        )
+
+    [errors:protected] => Array
+        (
+        )
+
+)

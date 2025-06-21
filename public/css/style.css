@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #12453e;
+  margin: 0;
+  padding: 0;
+}
+
+.title_legend {
+  color: #fff;
+}
+
+.header_logo {
+  width: auto;
+  max-height: 150px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  color: #ba9b4b;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(234, 224, 143);
+  background-color: #1e5d52;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step:first-child {
+  display: block;
+  /* Mostra o primeiro passo por padrão */
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.input_radio {
+  text-align: start;
+}
+
+.dados_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dados_input {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.dados_input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo_obrigatorio,
+.termo {
+  color: rgb(219, 48, 48);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.dados_input input,
+.dados_input select,
+.dados_input textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dados_input[type="text"],
+.dados_input[type="number"],
+.dados_input[type="sexo"] {
+  width: 70%;
+}
+
+.dados_input input:focus,
+.dados_input select:focus,
+.dados_input textarea:focus {
+  border-color: #ba9b4b;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ba9b4b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a08e3b;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border-color: green;
+}

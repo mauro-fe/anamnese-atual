@@ -1,0 +1,14 @@
+.navbar-brand-img {
+  border-radius: 50%;
+}
+
+.icon-lupa {
+  color: black;
+  /* Cor padrão */
+  transition: color 0.3s ease;
+}
+
+.nav-link.active .icon-lupa {
+  color: white;
+  /* Cor quando selecionado */
+}
